@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<title>prompt dialog box</title>
+</head>
+<body>
+<p id="demo"><a href="#demo" onclick="myName();">click here</a> to display my name</p>
+<script>
+function myName()
+{
+var name;
+var win=prompt("Enter name:","V SUMATHI");
+if(win==null||win==" ")
+{
+  text="user cancelled the prompt";
+}
+else
+{
+text="My name is"+win;
+}
+document.getElementById("demo").innerHTML=text;
+}
+</script>
+</body>
+</html>

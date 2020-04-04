@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Stack Ordering</title>
+        <style>
+            #layer1
+                {
+                    border:solid thick black;
+                    background-color:brown;
+                    padding:10px;
+                    width:300px;
+                    height:200px;
+                    position:absolute;
+                    top:100px;
+                    left:200px;
+                    z-index:0;
+	 color:white;
+                }
+            #layer2
+                {
+                    border:solid thick black;
+                    background-color:gray;
+                    padding:10px;
+                    width:300px;
+                    height:200px;
+                    position:absolute;
+                    top:120px;
+                    left:220px;
+                    z-index:0;
+                }
+            #layer3
+                {
+                    border:solid thick black;
+                    background-color:white;
+                    padding:10px;
+                    width:300px;
+                    height:200px;
+                    position:absolute;
+                    top:140px;
+                    left:240px;
+                    z-index:0;
+                }
+        </style>
+</head>
+    <body>
+        <script type=text/javascript>
+            var topLayer="layer3";
+            function mover(toTop)
+                {
+                    document.getElementById(topLayer).style.zIndex="0";
+                    document.getElementById(toTop).style.zIndex="1";
+                    topLayer=toTop;
+                }
+        </script>
+        <p id=layer1 onMouseOver=mover('layer1');>Vijay is the highest paid actor and one of the most significant figures in the industry.By 2017, he became the second-highest grossing actor in Tamil cinema history, behind Rajinikanth.As of 2019, Vijay has acted in 64 films as a lead actor and won numerous awards including three Tamil Nadu State Film Awards, eight Vijay Awards, an Indiatoday Award, SIIMA Award, Cosmopolitan Award and National Film Award UK, three Edison Awards and two Vikatan Awards.</p>
+        <p id=layer2 onMouseOver=mover('layer2');>Ajith Kumar is an Indian film actor who works mainly in Tamil cinema. Apart from a small role in the 1990 Tamil film En Veedu En Kanavar, his professional
+49 KB (2,548 words) - 16:26, 18 March 2020</p>
+        <p id=layer3 onMouseOver=mover('layer3');>Venkatesh Prabhu Kasthoori Raja (born 28 July 1982) better known by his stage name Dhanush, is an Indian film actor, producer, director, writer, lyricist, screenwriter and playback singer who predominantly works in Tamil cinema.Starring in 44 films over his career, he has won nine Vijay Awards, seven Filmfare Awards South, five Vikatan Awards, five Edison Awards and three National Film Awards.</p>
+    </body>
+ </html>
