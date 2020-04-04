@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>calculator</title>
+</head>
+<body>
+<script language="javascript">
+                function addNumbers()
+                {
+                        var a = parseInt(document.getElementById("value1").value);
+                        var b = parseInt(document.getElementById("value2").value);
+                        var add = document.getElementById("answer");
+                        add.value = a+b;
+                }
+ function divNumbers()
+                {
+                        var a = parseInt(document.getElementById("value1").value);
+                        var b = parseInt(document.getElementById("value2").value);
+                        var div= document.getElementById("answer");
+                        div.value = a/b;
+	      if(a>0 && b>0)
+	      {
+                        mul.value = a*b;
+	     }
+                       else
+	    {
+                        alert("Negative numbers and zeroes are not allowed");
+                       }
+                }
+ function subNumbers()
+                {
+                        var a = parseInt(document.getElementById("value1").value);
+                        var b = parseInt(document.getElementById("value2").value);
+                        var sub = document.getElementById("answer");
+                        sub.value = a-b;
+                }
+ function mulNumbers()
+                {
+                        var a = parseInt(document.getElementById("value1").value);
+                        var b = parseInt(document.getElementById("value2").value);
+                        var mul = document.getElementById("answer");
+                        if(a>0 && b>0)
+	      {
+                        mul.value = a*b;
+	     }
+                       else
+	    {
+                        alert("Negative numbers and zeroes not allowed");
+                       }
+                }	
+        </script>
+
+       value1 = <input type="text" id="value1" name="value1" value=""/><br><br>
+        value2 = <input type="text" id="value2" name="value2" value=""/><br><br>
+        <input type="button" name="Sumbit" value="add" onclick="javascript:addNumbers()"/>
+       <input type="button" name="Sumbit" value="sub" onclick="javascript:subNumbers()"/>
+       <input type="button" name="Sumbit" value="mul" onclick="javascript:mulNumbers()"/>
+      <input type="button" name="Sumbit" value="div" onclick="javascript:divNumbers()"/><br><br>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+      <p id="demo"></p>
+  </body>
+</html>     
